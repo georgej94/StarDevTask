@@ -1,0 +1,22 @@
+﻿<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:views="clr-namespace:StarDev.Views"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            x:Class="StarDev.Views.MainPage"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            android:TabbedPage.IsSwipePagingEnabled="False"
+            BarBackgroundColor="{StaticResource TextLightColour}"
+            BarTextColor="{StaticResource PrimaryColour}"
+            SelectedTabColor="{StaticResource PrimaryColour}"
+            UnselectedTabColor="{StaticResource TextDarkColour}">
+    <NavigationPage Title="Office List">
+        <x:Arguments>
+            <views:ListPage />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Office Map">
+        <x:Arguments>
+            <views:MapPage />
+        </x:Arguments>
+    </NavigationPage>
+</TabbedPage>

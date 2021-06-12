@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StarDev.App">
+    <Application.Resources>
+
+        <!--Colours-->
+        <Color x:Key="PrimaryColour">#ff68A0F4</Color>
+        <Color x:Key="BackgroundColour">#ffEAEDEF</Color>
+
+        <Color x:Key="TextLightColour">#ffFFFFFF</Color>
+        <Color x:Key="TextDarkColour">#ff3A3A3A</Color>
+
+        <!--Styles-->
+        <Style x:Key="Header1" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource TextDarkColour}" />
+            <Setter Property="FontSize" Value="24" />
+            <Setter Property="FontAttributes" Value="Bold" />
+        </Style>
+
+         <Style x:Key="Paragraph" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource TextDarkColour}" />
+            <Setter Property="FontSize" Value="18" />
+        </Style>
+    </Application.Resources>
+</Application>

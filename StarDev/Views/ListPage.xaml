@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="StarDev.Views.ListPage"
+    BackgroundColor="{StaticResource BackgroundColour}"
+    Title="Office List">
+    <ContentPage.Content>
+        <ListView
+            ItemsSource="{Binding Locations}"
+            IsRefreshing="{Binding Loading}"
+            SelectedItem="{Binding SelectedLocation, Mode=TwoWay}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" TextColor="{StaticResource TextDarkColour}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>
